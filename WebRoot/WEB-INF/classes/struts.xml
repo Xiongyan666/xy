@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="checkLogin" class="ch1.HelloWord">
+			<result name="success">/success.jsp
+			</result>
+		</action>
+	
+		<action name="check" class="ch1.Login">
+			<result name="show">/show.jsp
+			</result>
+		</action>
+		
+		<action name="reg" class="ch1.Login_2">
+			<result name="success">/login_ok2.jsp
+			</result>
+			<result name="input">login_2.jsp
+			</result>
+		</action>
+	</package>
+</struts>
